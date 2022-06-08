@@ -1,25 +1,44 @@
-function getHigherScore() {
-  const movieCard = document.querySelectorAll(".movie-card");
+function getScoreListAsNumber(movies) {
   const moviesScore = [];
-  movieCard.forEach((card) => {
+  movies.forEach((card) => {
     const scoreSpan = card.querySelector("span");
     const score = Number(scoreSpan.textContent.split(" ")[0]);
     moviesScore.push(score);
   });
+  return moviesScore;
+}
+
+function createHTMLElement(wrapper, selector) {
+  if (!wrapper || !selector) return;
+  const content = wrapper.querySelector(selector).textContent;
+  const element = document.createElement(selector);
+  element.textContent = content;
+  return element;
+}
+
+function appendElementToParent(parentSelector, childElement) {
+  if (!parentSelector || !childElement) return;
+  const container = document.querySelector(parentSelector);
+  container.appendChild(childElement);
+}
+
+function createHigherScoreCard(index, movies) {
+  if (!index) return;
+  if (index > 0) {
+    const higherCard = movies[index];
+    const titleElement = createHTMLElement(higherCard, "h3");
+    const scoreElement = createHTMLElement(higherCard, "span");
+    appendElementToParent("#largest-movie", titleElement);
+    appendElementToParent("#largest-movie", scoreElement);
+  }
+}
+
+function getHigherScore() {
+  const moviesCard = document.querySelectorAll(".movie-card");
+  const moviesScore = getScoreListAsNumber(moviesCard);
   const higherScore = Math.max(...moviesScore);
   const higherScoreIndex = moviesScore.indexOf(higherScore);
-  if (higherScoreIndex > 0) {
-    const higherCard = movieCard[higherScoreIndex];
-    const movieTitle = higherCard.querySelector("h3").textContent;
-    const movieScore = higherCard.querySelector("span").textContent;
-    const titleElement = document.createElement("h3");
-    const scoreElement = document.createElement("span");
-    titleElement.textContent = movieTitle;
-    scoreElement.textContent = movieScore;
-    const bestRatedContainer = document.querySelector("#largest-movie");
-    bestRatedContainer.appendChild(titleElement);
-    bestRatedContainer.appendChild(scoreElement);
-  }
+  createHigherScoreCard(higherScoreIndex, moviesCard);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
