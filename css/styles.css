@@ -67,6 +67,15 @@ footer a {
   border-bottom: 1px solid #eafcf3;
 }
 
+.movie-card:first-child {
+  padding-top: 0px;
+}
+
+.movie-card:last-child {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 #largest-movie {
   background-color: #fff;
   padding: 1.25rem;

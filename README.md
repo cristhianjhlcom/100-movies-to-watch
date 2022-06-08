@@ -8,7 +8,7 @@ Descarga el proyecto inicial con Git usando el comando `git clone https://github
 
 Se te descargara un proyecto inicial con un index.html con la lista de las peliculas para ver, una carpeta con los estilos y una carpeta con js donde trabajaremos todos nuestros scripts.
 
-Para empezar a trabajar en el proyecto te recomiendo crear una rama nueva llamada **feature/nivel-uno-mi-solucion** con el siguiente comando ``git checkout -b EL_NOMBRE_DE_TU_RAMA` aquí puedes empezar a escribir tu propio código.
+Para empezar a trabajar en el proyecto te recomiendo crear una rama nueva llamada **feature/nivel-uno-mi-solucion** con el siguiente comando `git checkout -b EL_NOMBRE_DE_TU_RAMA` aquí puedes empezar a escribir tu propio código.
 
 Vas a encontrar la solución de este primer nivel en la rama **feature/nivel-uno-solucion** igual te recomiendo aunque sea dedicarle 30 minutos a intentar solucionarlo por tu cuenta, esto te ayudara a mejorar tu nivel como desarrollador.
 
