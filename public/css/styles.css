@@ -65,6 +65,9 @@ footer a {
 .movie-card {
   padding: 1rem 0;
   border-bottom: 1px solid #eafcf3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .movie-card:first-child {
@@ -84,12 +87,21 @@ footer a {
   margin-bottom: 1.25rem;
 }
 
-#largest-movie h2 {
-  font-size: 1.375rem;
+.movie-status {
+  color: #1a1a1a;
+  background-color: yellow;
+  font-weight: 300;
+  padding: 6px 8px;
+  border-radius: 5px;
+  margin: 0;
 }
 
-.movie-card h3,
-#largest-movie h3 {
+.movie-status.viewed {
+  color: #ffffff;
+  background-color: green;
+}
+
+.movie-card h3 {
   font-size: 1.125rem;
 }
 
@@ -103,5 +115,11 @@ footer a {
 #largest-movie h3 {
   font-weight: 600;
   line-height: 2;
-  margin-bottom: 0.3125rem;
+  margin: 0;
+  color: #272e2b;
+  width: 60%;
+}
+
+.movie-card span {
+  color: #85b69d;
 }
