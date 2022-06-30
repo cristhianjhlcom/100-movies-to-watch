@@ -11,7 +11,7 @@ Es una aplicación sencilla en Javascript para practicar algunos conceptos bási
 
 ## Uso
 
-Descarga el proyecto inicial con Git usando el comando `git clone https://github.com/cristhianjhlweb/100-movies-to-watch.git` en la carpeta donde tengas tus proyectos.
+Descarga el proyecto inicial con Git usando el comando `git clone https://github.com/cristhianjhlweb/100-movies-to-watch.git` en la carpeta donde tengas tus proyectos. Y descargar la rama **feature/initial** donde estara todo el código fuente inicial del proyecto.
 
 Se te descargara un proyecto inicial con un index.html con la lista de las peliculas para ver, una carpeta con los estilos y una carpeta con js donde trabajaremos todos nuestros scripts.
 
@@ -28,6 +28,30 @@ Vas a encontrar la solución de este primer nivel en la rama **feature/nivel-uno
 
 Para esto debes utilizar las herramientas que te ofrecer javascript. Ya sea con la manipulación de arreglos, del DOM, selectores y más.
 
+### Nivel 1 Solución
+
+Puedes encontra la solución en la rama **feature/nivel-uno-solucion** solo has un `git checkout -b feature/nivel-uno-solucion`
+
+Puedes ver el video donde desarrolle el código en vivo en mi canal de youtube [100 Movies to Watch Lvl1](https://www.youtube.com/watch?v=w_WhgTVfOes)
+
+### Nivel 2
+
+- [x] Crear nuestro proyecto con npm
+- [x] Configurar el tsconfig.json
+- [x] Mover nuestros archivos estaticos (html, css) a nuestra carpeta public
+- [x] Crear una carpeta src donde manejaremos todo nuestro código fuente en typescript
+- [x] Crear un archivo movies.ts donde tendremos la data de las peliculas en un arreglo de objectos
+- [x] Crear un archivo movie.ts donde crearemos una clase que se encargara de manejar toda la lógica que vimos en el nivel 1
+- [x] Crear un archivo localstorage.ts donde manejaremos la persistencia de la data en el localstorage
+- [x] Crear un archivo main.ts donde se inicializara el proyecto
+- [x] Crear un archivo ui.ts que se encargara de la manipulación del DOM
+
+En este nivel refactorizaremos todo nuestro proyecto de nivel 1, usando typescript que nos permitira tipar nuestro código lo que nos permite tener un desarrollo más seguro y mejor.
+
+### Nivel 2 Solución
+
+Puedes encontra la solución en la rama **feature/nivel-dos-solucion** solo has un `git checkout -b feature/nivel-dos-solucion`
+
 ## Recursos
 
 - Array Methods [.forEach](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
@@ -37,10 +61,15 @@ Para esto debes utilizar las herramientas que te ofrecer javascript. Ya sea con 
 - Agregar elemento HTML creado a su componente padre [.appendChild](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild)
 - Encontrar el index de un elemento en un array por su valor [.indexOf](https://developer.mozilla.org/es/docs/web/javascript/reference/global_objects/array/indexof)
 - Obtener el valor maximo en un arreglo de números [Math.max](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
+- Que es TypeScript [TypeScript](https://www.typescriptlang.org/)
+  - Classes
+  - Types
+  - Interfaces
 
 ## Pantallas del proyecto
 
-![Screenshot del Proyecto](./images/screenshot.JPG)
+![Screenshot del Proyecto Nivel 1](./images/screenshot-1.JPG)
+![Screenshot del Proyecto Nivel 2](./images/screenshot-2.JPG)
 
 ## Se parte de mi comunidad
 
